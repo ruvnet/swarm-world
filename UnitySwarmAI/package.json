@@ -1,46 +1,55 @@
 {
-  "name": "com.claude-flow.unity-swarm-ai",
+  "name": "com.claudeflow.unity-swarm-ai",
   "version": "1.0.0",
   "displayName": "Unity Swarm AI",
-  "description": "A comprehensive swarm AI solution for Unity with modular architecture, spatial partitioning, and scalable performance optimizations.",
-  "unity": "2022.3",
+  "description": "Complete swarm intelligence system for Unity with performance optimization, spatial partitioning, and extensible behaviors. Supports flocking, ant colonies, formation flying, and more.",
+  "unity": "2021.3",
   "keywords": [
     "ai",
     "swarm",
-    "flocking",
     "boids",
-    "agents",
+    "flocking",
+    "simulation",
     "performance",
-    "gpu",
-    "ecs",
-    "dots"
+    "intelligent-agents"
   ],
   "author": {
-    "name": "Claude Flow",
-    "email": "support@claude-flow.com"
+    "name": "Claude Flow Swarm Intelligence",
+    "email": "contact@claudeflow.com",
+    "url": "https://github.com/ruvnet/swarm-world"
   },
   "dependencies": {
     "com.unity.mathematics": "1.2.6",
     "com.unity.collections": "1.2.4",
-    "com.unity.entities": "1.0.16",
     "com.unity.burst": "1.8.8",
     "com.unity.jobs": "0.70.0"
   },
   "samples": [
     {
-      "displayName": "Basic Flocking",
-      "description": "Simple flocking behavior demonstration",
-      "path": "Examples~/BasicFlocking"
+      "displayName": "Basic Flocking Demo",
+      "description": "Classic boids flocking behavior with 50-100 agents",
+      "path": "Examples/BasicFlocking"
     },
     {
-      "displayName": "Advanced Behaviors",
-      "description": "Complex swarm behaviors with multiple agent types",
-      "path": "Examples~/AdvancedBehaviors"
+      "displayName": "Ant Colony Simulation",
+      "description": "Pheromone-based pathfinding with resource gathering",
+      "path": "Examples/AntColony"
     },
     {
-      "displayName": "Performance Demo",
-      "description": "Large-scale swarm performance optimization showcase",
-      "path": "Examples~/PerformanceDemo"
+      "displayName": "Formation Flying",
+      "description": "Military-style aircraft formations with waypoint navigation",
+      "path": "Examples/FormationFlying"
+    },
+    {
+      "displayName": "Performance Stress Test",
+      "description": "1000+ agent performance benchmark with LOD system",
+      "path": "Examples/StressTest"
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruvnet/swarm-world.git",
+    "directory": "UnitySwarmAI"
+  },
+  "license": "MIT"
 }

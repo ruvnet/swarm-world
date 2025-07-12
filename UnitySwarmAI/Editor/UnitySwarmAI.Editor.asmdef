@@ -2,12 +2,7 @@
     "name": "UnitySwarmAI.Editor",
     "rootNamespace": "UnitySwarmAI.Editor",
     "references": [
-        "UnitySwarmAI.Runtime",
-        "Unity.Mathematics",
-        "Unity.Collections",
-        "Unity.Entities",
-        "Unity.Burst",
-        "Unity.Jobs"
+        "UnitySwarmAI.Runtime"
     ],
     "includePlatforms": [
         "Editor"

@@ -18,7 +18,7 @@ A comprehensive, modular swarm AI solution for Unity with performance optimizati
 
 1. Open Unity Package Manager (`Window > Package Manager`)
 2. Click the `+` button and select `Add package from git URL`
-3. Enter: `https://github.com/your-repo/unity-swarm-ai.git`
+3. Enter: `https://github.com/ruvnet/unity-swarm-ai.git`
 
 ### Via Package Manager Manifest
 

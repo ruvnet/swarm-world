@@ -4,13 +4,12 @@
     "references": [
         "Unity.Mathematics",
         "Unity.Collections",
-        "Unity.Entities",
         "Unity.Burst",
         "Unity.Jobs"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
@@ -19,12 +18,7 @@
         {
             "name": "com.unity.entities",
             "expression": "1.0.0",
-            "define": "UNITY_ENTITIES_1_0_OR_NEWER"
-        },
-        {
-            "name": "com.unity.burst",
-            "expression": "1.8.0",
-            "define": "UNITY_BURST_1_8_OR_NEWER"
+            "define": "UNITY_SWARM_AI_ENTITIES_SUPPORT"
         }
     ],
     "noEngineReferences": false

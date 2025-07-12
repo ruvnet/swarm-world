@@ -1,86 +1,67 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace UnitySwarmAI.Core
+namespace UnitySwarmAI
 {
     /// <summary>
-    /// Core interface for all swarm agents, defining the basic contract
-    /// for position, velocity, and force application.
+    /// Core interface for all swarm agents. Provides essential properties and methods
+    /// for agent coordination and behavior.
     /// </summary>
     public interface ISwarmAgent
     {
-        /// <summary>
-        /// Current world position of the agent
-        /// </summary>
+        /// <summary>Current world position of the agent</summary>
         Vector3 Position { get; }
         
-        /// <summary>
-        /// Current velocity vector of the agent
-        /// </summary>
+        /// <summary>Current velocity vector of the agent</summary>
         Vector3 Velocity { get; }
         
-        /// <summary>
-        /// Radius within which this agent can perceive other agents
-        /// </summary>
-        float PerceptionRadius { get; }
+        /// <summary>Current forward direction of the agent</summary>
+        Vector3 Forward { get; }
         
-        /// <summary>
-        /// Maximum speed the agent can achieve
-        /// </summary>
+        /// <summary>Maximum movement speed of the agent</summary>
         float MaxSpeed { get; }
         
-        /// <summary>
-        /// Maximum force that can be applied to the agent
-        /// </summary>
+        /// <summary>Maximum steering force that can be applied</summary>
         float MaxForce { get; }
         
-        /// <summary>
-        /// Unique identifier for this agent
-        /// </summary>
+        /// <summary>Radius within which the agent can perceive neighbors</summary>
+        float PerceptionRadius { get; }
+        
+        /// <summary>Mass of the agent for physics calculations</summary>
+        float Mass { get; }
+        
+        /// <summary>Unique identifier for the agent</summary>
         int AgentId { get; }
         
-        /// <summary>
-        /// Current behavior state of the agent
-        /// </summary>
-        SwarmBehaviorState BehaviorState { get; set; }
+        /// <summary>Current neighbors within perception radius</summary>
+        List<ISwarmAgent> Neighbors { get; }
+        
+        /// <summary>Whether the agent is currently active and processing</summary>
+        bool IsActive { get; }
         
         /// <summary>
-        /// Apply a force to this agent's movement
+        /// Apply a steering force to the agent
         /// </summary>
         /// <param name="force">Force vector to apply</param>
         void ApplyForce(Vector3 force);
         
         /// <summary>
-        /// Get all neighbors within perception radius
+        /// Get neighbors within a specific radius
         /// </summary>
-        /// <returns>List of neighboring agents</returns>
-        List<ISwarmAgent> GetNeighbors();
+        /// <param name="radius">Search radius</param>
+        /// <returns>List of neighbors within radius</returns>
+        List<ISwarmAgent> GetNeighborsInRadius(float radius);
         
         /// <summary>
-        /// Receive a message from another agent or system
+        /// Send a message to this agent
         /// </summary>
-        /// <param name="message">The message to process</param>
+        /// <param name="message">Message to receive</param>
         void ReceiveMessage(ISwarmMessage message);
         
         /// <summary>
-        /// Update the agent's behavior and position
+        /// Get the agent's current behavior priorities
         /// </summary>
-        /// <param name="deltaTime">Time since last update</param>
-        void UpdateAgent(float deltaTime);
-    }
-    
-    /// <summary>
-    /// Enumeration of possible behavior states for swarm agents
-    /// </summary>
-    public enum SwarmBehaviorState
-    {
-        Idle,
-        Flocking,
-        Seeking,
-        Fleeing,
-        Wandering,
-        Foraging,
-        Returning,
-        Custom
+        /// <returns>Dictionary of behavior names and weights</returns>
+        Dictionary<string, float> GetBehaviorWeights();
     }
 }
