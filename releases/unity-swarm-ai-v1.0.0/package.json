@@ -26,19 +26,9 @@
   },
   "samples": [
     {
-      "displayName": "Basic Flocking",
-      "description": "Simple flocking behavior demonstration",
-      "path": "Examples~/BasicFlocking"
-    },
-    {
-      "displayName": "Advanced Behaviors",
-      "description": "Complex swarm behaviors with multiple agent types",
-      "path": "Examples~/AdvancedBehaviors"
-    },
-    {
-      "displayName": "Performance Demo",
-      "description": "Large-scale swarm performance optimization showcase",
-      "path": "Examples~/PerformanceDemo"
+      "displayName": "Basic Flocking Demo",
+      "description": "Classic boids flocking behavior with configurable parameters",
+      "path": "Examples/BasicFlocking"
     }
   ]
 }
