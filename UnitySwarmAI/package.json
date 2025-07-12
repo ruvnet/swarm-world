@@ -1,6 +1,6 @@
 {
   "name": "com.claudeflow.unity-swarm-ai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Unity Swarm AI",
   "description": "Complete swarm intelligence system for Unity with performance optimization, spatial partitioning, and extensible behaviors. Supports flocking, ant colonies, formation flying, and more.",
   "unity": "2021.3",

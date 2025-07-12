@@ -2,12 +2,13 @@
 
 ## 📦 Available Downloads
 
-### Unity Package v1.0.0
+### Unity Package v1.0.1 (Latest)
 
 Choose your preferred download format:
 
-- **[unity-swarm-ai-v1.0.0.tgz](unity-swarm-ai-v1.0.0.tgz)** - Compressed tarball (Linux/Mac)
-- **[unity-swarm-ai-v1.0.0.zip](unity-swarm-ai-v1.0.0.zip)** - ZIP archive (Windows/Cross-platform)
+- **[unity-swarm-ai-v1.0.1.tgz](unity-swarm-ai-v1.0.1.tgz)** - Standard package (25KB)
+- **[unity-swarm-ai-v1.0.1.zip](unity-swarm-ai-v1.0.1.zip)** - ZIP archive (38KB)
+- **[unity-swarm-ai-v1.0.1-minimal.tgz](unity-swarm-ai-v1.0.1-minimal.tgz)** - Minimal version (21KB)
 
 ## 🚀 Quick Installation
 
@@ -17,12 +18,12 @@ Choose your preferred download format:
 3. Enter: `https://github.com/ruvnet/swarm-world.git?path=/UnitySwarmAI`
 
 ### Method 2: Download Package (.tgz - Recommended)
-1. Download: [unity-swarm-ai-v1.0.0.tgz](unity-swarm-ai-v1.0.0.tgz)
+1. Download: [unity-swarm-ai-v1.0.1.tgz](unity-swarm-ai-v1.0.1.tgz)
 2. In Unity Package Manager: `+` → "Add package from tarball"
 3. Select the downloaded .tgz file
 
 ### Method 3: Manual Installation (.zip)
-1. Download: [unity-swarm-ai-v1.0.0.zip](unity-swarm-ai-v1.0.0.zip)
+1. Download: [unity-swarm-ai-v1.0.1.zip](unity-swarm-ai-v1.0.1.zip)
 2. Extract to your Unity project's `Packages/` folder
 3. Unity will auto-import the package
 

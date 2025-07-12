@@ -1,6 +1,6 @@
 {
   "name": "com.claude-flow.unity-swarm-ai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Unity Swarm AI",
   "description": "A comprehensive swarm AI solution for Unity with modular architecture, spatial partitioning, and scalable performance optimizations.",
   "unity": "2022.3",
