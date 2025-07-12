@@ -11,17 +11,18 @@
 ```
 
 ### 2. Download Package Files 📦
-**Option A: Download .tgz (Mac/Linux)**
+**Option A: Download .tgz (Unity Package Manager compatible)**
 - Download: [unity-swarm-ai-v1.0.0.tgz](unity-swarm-ai-v1.0.0.tgz)
-- Extract and copy to your project's `Packages/` folder
+- In Unity Package Manager: '+' → "Add package from tarball"
+- Select the downloaded .tgz file
 
-**Option B: Download .zip (Windows/Cross-platform)**
+**Option B: Download .zip (Manual installation)**
 - Download: [unity-swarm-ai-v1.0.0.zip](unity-swarm-ai-v1.0.0.zip)
 - Extract and copy to your project's `Packages/` folder
 
 ### 3. Local Package Installation 💾
 ```
-1. Download and extract package
+1. Download and extract any package format
 2. Unity Package Manager → '+' → "Add package from disk"
 3. Select package.json from extracted folder
 ```

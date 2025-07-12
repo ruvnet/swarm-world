@@ -16,15 +16,15 @@ Choose your preferred download format:
 2. Click `+` → "Add package from git URL"
 3. Enter: `https://github.com/ruvnet/swarm-world.git?path=/UnitySwarmAI`
 
-### Method 2: Download Package
-1. Download one of the packages above
+### Method 2: Download Package (.tgz - Recommended)
+1. Download: [unity-swarm-ai-v1.0.0.tgz](unity-swarm-ai-v1.0.0.tgz)
+2. In Unity Package Manager: `+` → "Add package from tarball"
+3. Select the downloaded .tgz file
+
+### Method 3: Manual Installation (.zip)
+1. Download: [unity-swarm-ai-v1.0.0.zip](unity-swarm-ai-v1.0.0.zip)
 2. Extract to your Unity project's `Packages/` folder
 3. Unity will auto-import the package
-
-### Method 3: Package Manager Local
-1. Download and extract the package
-2. In Unity Package Manager: `+` → "Add package from disk"
-3. Select the `package.json` file
 
 ## 📋 Package Contents
 
