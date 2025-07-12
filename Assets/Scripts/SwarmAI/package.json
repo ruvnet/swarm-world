@@ -1,0 +1,43 @@
+{
+    "name": "com.swarmworld.swarm-ai",
+    "version": "1.0.0",
+    "displayName": "Swarm AI Unity Plugin",
+    "description": "High-performance swarm AI system for Unity with configurable behaviors, spatial partitioning, and Job System optimization.",
+    "unity": "2021.3",
+    "keywords": [
+        "swarm",
+        "ai",
+        "flocking",
+        "boids",
+        "steering",
+        "performance",
+        "job-system"
+    ],
+    "author": {
+        "name": "Swarm World",
+        "email": "contact@swarmworld.dev"
+    },
+    "dependencies": {
+        "com.unity.collections": "1.2.4",
+        "com.unity.jobs": "0.51.0-preview.32",
+        "com.unity.burst": "1.6.6",
+        "com.unity.mathematics": "1.2.6"
+    },
+    "samples": [
+        {
+            "displayName": "Basic Flocking",
+            "description": "Simple flocking behavior demonstration",
+            "path": "Samples~/BasicFlocking"
+        },
+        {
+            "displayName": "Large Scale Swarms",
+            "description": "Performance optimized swarms with Job System",
+            "path": "Samples~/LargeScaleSwarms"
+        },
+        {
+            "displayName": "Custom Behaviors",
+            "description": "Examples of custom swarm behaviors",
+            "path": "Samples~/CustomBehaviors"
+        }
+    ]
+}
