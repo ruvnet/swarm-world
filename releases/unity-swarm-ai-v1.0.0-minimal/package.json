@@ -18,31 +18,12 @@
     "email": "contact@claudeflow.com",
     "url": "https://github.com/ruvnet/swarm-world"
   },
-  "dependencies": {
-    "com.unity.mathematics": "1.2.6",
-    "com.unity.collections": "1.2.4",
-    "com.unity.burst": "1.8.8"
-  },
+  "dependencies": {},
   "samples": [
     {
       "displayName": "Basic Flocking Demo",
       "description": "Classic boids flocking behavior with 50-100 agents",
       "path": "Examples/BasicFlocking"
-    },
-    {
-      "displayName": "Ant Colony Simulation",
-      "description": "Pheromone-based pathfinding with resource gathering",
-      "path": "Examples/AntColony"
-    },
-    {
-      "displayName": "Formation Flying",
-      "description": "Military-style aircraft formations with waypoint navigation",
-      "path": "Examples/FormationFlying"
-    },
-    {
-      "displayName": "Performance Stress Test",
-      "description": "1000+ agent performance benchmark with LOD system",
-      "path": "Examples/StressTest"
     }
   ],
   "repository": {
